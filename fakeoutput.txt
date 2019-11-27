@@ -1,0 +1,19 @@
+Turn 4              // Every turn this box will be displayed showing the
+Name: Jane Goodall  // current attributes of the student(instance of the game),
+Grade: 87.68 (B)    // pulled from that student class. The game continues until
+Happiness: 12       // the max # of turns has been reached or any of the attributes
+Money: 250 dollars  // hits zero. 
+____________________________________________
+Event: You've been hit with a tuition hike.   //Random events happen every turn.
+You can handle a 2 percent increase right?    //A switch case is used decided by a
+-3 happiness                                  //random integer method. More unique 
+-130 dollars                                  //events can be added and logic can 
+____________________________________________  //be added to prevent repeats. 
+Action: 
+press 1 to study                              //This is where we read the commands 
+press 2 to hang out with friends              //from the user (and their chance to
+press 3 to go work at Subway                  //earn back those points they lose
+press -1 to quit                              //during events. A scanner is used 
+press any other button to skip your turn      //in addition to if/else logic. Each 
+                                              //action is a method within the student
+                                              //class.
