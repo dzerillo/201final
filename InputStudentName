@@ -1,0 +1,13 @@
+public static void main(String[] args) {
+    Scanner myName = new Scanner(System.in);
+
+    System.out.println("Enter name");
+
+    // String input
+    String name = myName.nextLine();
+
+
+    // Output input by user
+    System.out.println("Name: " + name);
+	  }
+	}
