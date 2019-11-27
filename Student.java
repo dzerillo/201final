@@ -4,6 +4,13 @@ public class Student {
 	int happiness;
 	int turnsTaken;
 	
+	//Constructor
+	public Student() {
+		studentName = " ";
+		happiness = 50;
+		turnsTaken = 0;
+	}
+	
 	public String getName() {
 		return studentName;
 	}
@@ -21,6 +28,11 @@ public class Student {
 	}
 	public void setTurnsTaken(int turnsTaken) {
 		this.turnsTaken = turnsTaken;
+	}
+	
+	// Method: Student pick a event
+	public static void pickEvent(Events event) {
+		
 	}
 	
 }
