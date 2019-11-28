@@ -1,0 +1,65 @@
+public class DayChoices {
+
+	public static void main(String[] args) {
+		
+		int gradeResult;
+		int currentGrade;
+		
+		currentGrade = 76;
+		
+		Events A = new Events("Meet the TA for office hours.", 3);
+		Events B = new Events("Catch up with your bestfriend over lunch.", -1);
+		Events C = new Events("Grab lunch togo and meet your classmates for study group.", 2);
+		Events D = new Events("Make yourself comfortable on the couch for a Netflix marathon.", -2);
+		
+		System.out.println("Well rested, stomach full, coffee poured: how will"
+				+ " you spend your day? [Pick 1, 2, 3, or 4]"
+				+ "\n 1. Meet the TA for office hours."
+				+ "\n 2. Catch up with your bestfriend over lunch."
+				+ "\n 3. Grab lunch togo and meet your classmates for study group."
+				+ "\n 4. Make yourself comfortable on the couch for a Netflix marathon."
+				+ "\n\n");
+		
+		Scanner pick = new Scanner(System.in);
+		int choice = pick.nextInt();
+
+		if ( choice == 1) {
+			
+			gradeResult = currentGrade + A.eventValue;
+			
+			System.out.println("The TA got a glimpse of the exam and gave you tips on "
+					+ "what you should study extra hard for.");			
+			
+		}
+		
+if ( choice == 2) {
+			
+			gradeResult = currentGrade + B.eventValue;
+			
+			System.out.println("Your best friend was late for lunch, but the food was "
+					+ "really good and you learned all about their family vacation.");			
+			
+		}
+
+if ( choice == 3) {
+	
+	gradeResult = currentGrade + C.eventValue;
+	
+	System.out.println("The library was packed and you couldn't get a white board, but "
+			+ "several of your classmates had talked to the professor and pass on a "
+			+ "\n study tips.");			
+	
+		}
+
+if ( choice == 4) {
+	
+	gradeResult = currentGrade + D.eventValue;
+	
+	System.out.println("Netflix is removing your favorite show next month! "
+			+ "\n Better binge all 11 seasons.");			
+	
+		}
+
+	}
+
+}
