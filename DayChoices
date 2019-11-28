@@ -1,11 +1,17 @@
+
+import java.util.Scanner;
+
+
 public class DayChoices {
 
 	public static void main(String[] args) {
 		
-		int gradeResult;
-		int currentGrade;
+		int currentGrade = 75;
 		
-		currentGrade = 76;
+		int gradeResult;
+	
+		
+
 		
 		Events A = new Events("Meet the TA for office hours.", 3);
 		Events B = new Events("Catch up with your bestfriend over lunch.", -1);
@@ -13,7 +19,7 @@ public class DayChoices {
 		Events D = new Events("Make yourself comfortable on the couch for a Netflix marathon.", -2);
 		
 		System.out.println("Well rested, stomach full, coffee poured: how will"
-				+ " you spend your day? [Pick 1, 2, 3, or 4]"
+				+ " you spend your day? [Pick 1, 2, 3, or 4]\n\n"
 				+ "\n 1. Meet the TA for office hours."
 				+ "\n 2. Catch up with your bestfriend over lunch."
 				+ "\n 3. Grab lunch togo and meet your classmates for study group."
@@ -46,8 +52,8 @@ if ( choice == 3) {
 	gradeResult = currentGrade + C.eventValue;
 	
 	System.out.println("The library was packed and you couldn't get a white board, but "
-			+ "several of your classmates had talked to the professor and pass on a "
-			+ "\n study tips.");			
+			+ "several of your classmates \nhad talked to the professor and passed on a "
+			+ "few study tips.");			
 	
 		}
 
@@ -56,10 +62,58 @@ if ( choice == 4) {
 	gradeResult = currentGrade + D.eventValue;
 	
 	System.out.println("Netflix is removing your favorite show next month! "
-			+ "\n Better binge all 11 seasons.");			
+			+ "\nBetter binge all 11 seasons.\n\n\n\n\n");			
 	
 		}
 
+	int finalGrade = currentGrade;
+	boolean play = true;
+			
+		
+	
+	if (  finalGrade <= 59 ) {
+		
+		System.out.println("Your final grade is an F. Should've hit the books harder.");
+		
+
 	}
+	
+	if (finalGrade <= 69) {
+		
+		if (finalGrade > 69) {
+		
+			System.out.println("Your final grade is a D. Have fun in summer school.");
+			
+		}
+
+	}
+	
+	if (finalGrade <= 79) {
+		
+		if (finalGrade > 69) {
+			
+			System.out.println("Your final grade is a C. Not good enough.");
+	
+		}
+	}
+	
+	if (finalGrade <= 89) {
+		
+		if (finalGrade > 79) {
+			
+			System.out.println("Your final grade is a B. You couldn't get an A?");
+		
+		}
+	
+	}
+	
+	if (finalGrade > 89) {
+		
+		System.out.println("Your final grade is an A. Your spot in the library will miss you next semester.");
+		
+	}
+
+	}
+		 
 
 }
