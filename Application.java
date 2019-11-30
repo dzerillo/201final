@@ -13,7 +13,8 @@ public class Application {
 		Student student = new Student(firstName, lastName);
 		
 		//Need to assign Random Grade to the student
-		
+		int finalGrade = (int) (Math.random()*100);
+		System.out.println("your current grade is" + finalGrade);
 		//Creating  Event Array List by 14 * 2
 		Event [] [] summaryEvent = new Event[14] [2];
 		
@@ -32,22 +33,22 @@ public class Application {
 			switch(caseNumber) {
 			case 1:
 				summaryEvent[14 - day][0] = new Event("Meet the TA at office hours");
-				summaryEvent[14 - day][1] = new Event(3);
+				finalGrade += 3;
 				break;
 				      
 			case 2:
 				summaryEvent[14 - day][0] = new Event("Catch up with your bestfriend over lunch");
-				summaryEvent[14 - day][1] = new Event(-1);
+				finalGrade -= 1;
 				break;
 				
 			case 3:
 				summaryEvent[14 - day][0] = new Event("Grab luch togo and meet you classmates for study group");
-				summaryEvent[14 - day][1] = new Event(2);
+				finalGrade += 2;
 				break;
 				
 			case 4:
 				summaryEvent[14 - day][0] = new Event("Make yourself comfortable on the couch for a Netflix martho");
-				summaryEvent[14 - day][1] = new Event(-2);
+				finalGrade -= 2;
 				break;
 		
 			}
@@ -59,11 +60,10 @@ public class Application {
 		for(int i = 0; i < summaryEvent.length; i++) {
 			for(int j = 0; j < summaryEvent[i].length; j++) {
 			System.out.println(summaryEvent[i][j]);	
-			}
-			
+			}			
 		}
-		
+		System.out.println("The Final Grade for " + firstName + lastName + " is " + finalGrade);
 		
 	}
-
+	
 }

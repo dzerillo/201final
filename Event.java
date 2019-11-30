@@ -12,7 +12,10 @@
 	public Event(int eventScore) {
 		this.eventScore = eventScore;
 	}
-	
+	public Event(String eventDescription, int eventScore) {
+		this.eventDescription = eventDescription;
+		this.eventScore = eventScore;
+	}
 	//Accessor and Mutator
 	public String getEventDescription() {
 		return eventDescription;
@@ -26,4 +29,9 @@
 	public void setEventScore(int eventScore) {
 		this.eventScore = eventScore;
 	}
+	@Override
+	public String toString() {
+		return eventDescription;
+	}
+	
 }
